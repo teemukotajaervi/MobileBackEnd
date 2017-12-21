@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2685d531c0bf4c8d9de46011c4aaea4b" Name="Diagram1">
+        <EntityTypeShape EntityType="KingHoursModel.Contractors" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingHoursModel.Customers" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingHoursModel.Employees" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingHoursModel.Timesheet" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KingHoursModel.WorkAssignments" Width="2.75" PointX="3" PointY="11" IsExpanded="true" />
+        <AssociationConnector Association="KingHoursModel.FK_Employees_Contractors" ManuallyRouted="false" />
+        <AssociationConnector Association="KingHoursModel.FK_Timesheet_Contractors" ManuallyRouted="false" />
+        <AssociationConnector Association="KingHoursModel.FK_Timesheet_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="KingHoursModel.FK_WorkAssignments_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="KingHoursModel.FK_Timesheet_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="KingHoursModel.FK_Timesheet_WorkAssignments" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
